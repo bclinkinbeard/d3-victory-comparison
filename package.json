@@ -1,0 +1,29 @@
+{
+  "name": "victorious",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack && cp index.html public/index.html && serve public",
+    "deploy-d3": "surge -p public -d bcc-d3-test.surge.sh",
+    "deploy-victory": "surge -p public -d bcc-victory-test.surge.sh"
+  },
+  "keywords": [],
+  "author": "Ben Clinkinbeard <ben.clinkinbeard@gmail.com> (http://benclinkinbeard.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^12.0.1",
+    "css-loader": "^0.23.1",
+    "d3": "^3.5.12",
+    "postcss-loader": "^0.8.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "style-loader": "^0.13.0",
+    "victory": "^0.1.0"
+  },
+  "devDependencies": {
+    "hjs-webpack": "^6.0.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}
